@@ -131,9 +131,9 @@ const submitHandler = async() => {
   colorScheme="red"
   width="100%"
   onClick={() => {
-    setEmail("m5@gmail.com");
+    setEmail("a6@gmail.com");
     setPassword("123456");
-    setName("mridul");
+    setName("guest");
   }}
 >
   Get Guest User Credentials
