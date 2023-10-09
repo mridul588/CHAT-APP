@@ -63,7 +63,7 @@ const submitHandler = async () => {
       },
       config
     );
-    console.log(data);
+    // console.log(data);
     toast({
       title: "Registration Successful",
       status: "success",
