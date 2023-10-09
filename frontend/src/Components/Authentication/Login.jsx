@@ -39,7 +39,7 @@ const submitHandler = async() => {
       },
     };
 
-    const { data } = await axios.post("http://localhost:5000/api/user/login",
+    const { data } = await axios.post("https://giga-chat-wrb2.onrender.com/api/user/login",
     { email , password },
     config
     );
