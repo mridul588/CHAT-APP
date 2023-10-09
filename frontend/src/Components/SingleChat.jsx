@@ -17,7 +17,7 @@ import io from "socket.io-client"
 
 
 
-const ENDPOINT = "http://localhost:5000";
+const ENDPOINT = "https://giga-chat-wrb2.onrender.com";
 
 var socket , selectedChatCompare;
 
@@ -47,7 +47,7 @@ const SingleChat = ({fetchAgain , setFetchAgain }) => {
           };
 
           setLoading(true);
-          const { data } = await axios.get(`api/message/${selectedChat._id}`,
+          const { data } = await axios.get(`https://giga-chat-wrb2.onrender.com/api/message/${selectedChat._id}`,
           config
           );
 
@@ -84,7 +84,7 @@ const SingleChat = ({fetchAgain , setFetchAgain }) => {
           
           setNewMessage("");
 
-          const {data} = await axios.post(`/api/message`,{
+          const {data} = await axios.post(`https://giga-chat-wrb2.onrender.com/api/message`,{
             content: newMessage,
             chatId: selectedChat._id
           },config);
